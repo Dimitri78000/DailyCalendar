@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Ma page d'accueil{% endblock %}
+{% block content %}
+
+<h2>Bienvenue sur mon blog</h2>
+<p>La date actuelle est : {{ date }}</p>
+
+Les couleurs de l'arc-en-ciel sont :
+
+<ul>
+{% for code, nom in couleurs.items %}
+    <li style="color: #{{ code }}">{{ nom }}</li>
+{% endfor %}
+</ul>
+
+{% load static %}
+<img src="{% static '/img/rainbow.jpeg' %}" alt="Mon image d'arc-en-ciel" />
+
+{% endblock %}

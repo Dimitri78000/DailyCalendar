@@ -1,0 +1,43 @@
+body 
+{
+   width: 1000px;
+   margin-left: auto;
+   margin-right: auto;
+} 
+
+h1
+{
+	font-size: 2.25em;
+	text-align: center;
+   	color: #4169E1; /* royal blue  www.rapidtables.com/web/css/css-color.html */
+   	margin: 10px;
+   	font-family: "Trebuchet MS";
+}
+
+.nav
+{
+	font-size: 1.3em;
+	margin: 10px;
+	color: #4169E1; /* royal blue  www.rapidtables.com/web/css/css-color.html */
+	font-family: "Trebuchet MS";
+	text-decoration: none;
+}
+nav
+{
+	text-align: center;
+}
+
+hr
+{
+  width: 90%;
+  height: 2px; 	
+  background-color: #4169E1; /* royal blue  www.rapidtables.com/web/css/css-color.html */
+  border: none; /*on supprime le style par défaut*/
+}
+
+footer
+{
+	text-align: center;
+	color: navy; 
+	font-family: "Trebuchet MS";
+}

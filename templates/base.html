@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  {% load static %}
+  <link rel="stylesheet" href="{% static '/css/style.css' %}" />
+  <title>{% block title %} DailyCalendar {% endblock %}</title>
+</head>
+<body>
+<header>
+  <h1> DailyCalendar </h1>
+  <hr>
+  <nav>
+   {% block nav %}
+   <a class="nav" href=""> TASKS </a>
+   <a class="nav" href=""> CALENDAR </a> 
+   <a class="nav" href=""> ACCOUNT </a>
+   {% endblock %}
+  </nav>
+  <hr>
+</header>
+
+   <section id="content">
+       {% block content %}{% endblock %}
+   </section>
+<hr>
+<footer>
+  Powered by Django  -  dailycalendarcontact@gmail.com  -  last update : 21/05/2019
+</footer>
+</body>
+</html>
